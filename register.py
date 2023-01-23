@@ -3,10 +3,10 @@ import subprocess
 dbname = 'main.db'
 conn = sqlite3.connect(dbname)
 
-# SQLiteを操作するためのカーソルを作成
+
 cur = conn.cursor()
 
-# テーブルの作成
+
 cur.execute(
     "CREATE TABLE IF NOT EXISTS hwidauth (hwid text)"
 )
